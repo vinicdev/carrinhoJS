@@ -141,6 +141,30 @@ body {
     font-size: 1.1rem;
 }
 
+#vini {
+    text-decoration: none;
+    color: $white-200;
+    transition: .6s;
+}
+
+#vini:hover {
+    text-decoration: none;
+    color: $red;
+}
+
+@media (max-width: 736px) {
+    #spaceMerchan {
+        width: 100%;
+        height: 378px;   
+        
+        background-image: url('/assets/img/air-jordan.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+    }
+}
+
 @media (max-width: 643px) {
     #textsSpace {
         @include alignItems (column, center, center);
@@ -163,8 +187,8 @@ body {
     }
 }
 
-@media (max-width: 293px) {
-    #textContentsShipping {
+@media (max-width: 324px) {
+    #textContentsShipping, #textFooter {
         font-size: 0.8rem;
     }
 }
