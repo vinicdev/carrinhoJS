@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F9F9F9;
+}
+
+.contentsInfo {
+  width: 100%;
+  height: 60px;
+  background-color: #181818;
+  color: #F9F9F9;
+  font-weight: 500;
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#textContentsShipping {
+  font-size: 1rem;
+}
+
+#titleNameSite {
+  width: 100%;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #181818;
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#spaceMerchan {
+  width: 100%;
+  height: 378px;
+  background-image: url("/assets/img/air-jordan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: center;
+}
+
+#textsSpace {
+  margin-left: 10%;
+}
+
+#titleMerchan, #descriptionMerchan {
+  color: #F9F9F9;
+}
+
+#titleMerchan {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#descriptionMerchan {
+  width: 50%;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 35px;
+}
+
+#textSpaceShoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 59px;
+}
+
+#titleDestaques {
+  margin: 58px 0 10px 0;
+  font-size: 2rem;
+  color: #181818;
+  font-weight: 600;
+}
+
+#descriptionSubtitle {
+  font-size: 1.12rem;
+  font-weight: 32px;
+  color: #474747;
+}
+
+#contentesCards {
+  width: 90%;
+  margin: 0 auto 112px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 39px 13px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  flex: 0 1 300px;
+  background-color: #EBE9EA;
+  text-align: center;
+}
+
+.contentsImage {
+  margin-bottom: 8px;
+}
+
+.spaceValue {
+  color: #474747;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.priceShoes {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 8px 0 20px 0;
+}
+
+.taxado {
+  color: #b91b1b;
+}
+
+.buttonBuy {
+  text-decoration: none;
+  background-color: #181818;
+  color: #F9F9F9;
+  padding: 5% 5%;
+  transition: 0.8s;
+}
+
+.buttonBuy:hover {
+  background-color: #474747;
+  color: #EBE9EA;
+}
+
+#textFooter {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 643px) {
+  #textsSpace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  #titleMerchan {
+    width: 90%;
+    font-size: 1.75rem;
+  }
+  #descriptionMerchan {
+    width: 90%;
+    font-size: 1rem;
+  }
+  #descriptionSubtitle {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media (max-width: 293px) {
+  #textContentsShipping {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

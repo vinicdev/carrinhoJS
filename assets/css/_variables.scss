@@ -1,0 +1,22 @@
+$white: #F9F9F9;
+$white-200: #EBE9EA;
+$gray: #474747;
+$black-light: #181818;
+$red: #b91b1b;
+
+
+@mixin funtionContentsInfo {
+    width: 100%;
+    height: 60px;
+}
+
+@mixin alignItems($flexDirection, $alingItems, $justifyContent) {
+    display: flex;
+    flex-direction: $flexDirection;
+    align-items: $alingItems;
+    justify-content: $justifyContent;
+}
+
+@mixin alignItemsMargin ($marginTopBottom) {
+    margin: $marginTopBottom auto;
+}

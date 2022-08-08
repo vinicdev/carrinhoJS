@@ -1,0 +1,171 @@
+@import './_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: $white;
+}
+
+.contentsInfo {
+    @include funtionContentsInfo;
+
+    background-color: $black-light;
+    color: $white;
+    font-weight: 500;
+
+    @include alignItems(none, center, center);
+}
+
+#textContentsShipping {
+    font-size: 1rem;
+}
+
+#titleNameSite {
+    @include funtionContentsInfo;
+
+    font-size: 1.5rem;
+    font-weight: 600 ;
+
+    color: $black-light;
+
+    @include alignItems(none, center, center);
+}
+
+#spaceMerchan {
+    width: 100%;
+    height: 378px;   
+    
+    background-image: url('/assets/img/air-jordan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include alignItems(column, none, center);
+}
+
+#textsSpace {
+    margin-left: 10%;
+}
+
+#titleMerchan, #descriptionMerchan {
+    color: $white;
+}
+
+#titleMerchan {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#descriptionMerchan {
+    width: 50%;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 35px;
+}
+
+#textSpaceShoes {
+    @include alignItems(column, center, center);
+    margin-bottom: 59px;
+}
+
+#titleDestaques {
+    margin: 58px 0 10px 0;
+    font-size: 2rem;
+    color: $black-light;
+    font-weight: 600;
+}
+
+#descriptionSubtitle {
+    font-size: 1.12rem;
+    font-weight: 32px;
+    color: $gray;
+}
+
+#contentesCards {
+    width: 90%;
+    margin: 0 auto 112px auto;
+    @include alignItems(row, center, center);
+    flex-wrap: wrap;
+    gap: 39px 13px;
+}
+
+.card {
+    @include alignItems(column, center, center);
+    height: 300px;
+    flex: 0 1 300px;
+    background-color: $white-200;
+    text-align: center;
+}
+
+.contentsImage {
+    margin-bottom: 8px;
+}
+
+.spaceValue {
+    color: $gray;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.priceShoes {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 8px 0 20px 0;
+}
+
+.taxado {
+    color: $red;
+}
+
+.buttonBuy {
+    text-decoration: none;
+    background-color: $black-light;
+    color: $white;
+    padding: 5% 5%;
+    transition: .8s;
+}
+
+.buttonBuy:hover {
+    background-color: $gray;
+    color: $white-200;
+}
+
+#textFooter {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 643px) {
+    #textsSpace {
+        @include alignItems (column, center, center);
+        margin-left: 0;
+    }
+
+    #titleMerchan {
+        width: 90%;
+        font-size: 1.75rem;
+    }
+    
+    #descriptionMerchan {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    #descriptionSubtitle {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 293px) {
+    #textContentsShipping {
+        font-size: 0.8rem;
+    }
+}
+
