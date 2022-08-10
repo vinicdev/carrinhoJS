@@ -11,11 +11,11 @@ body {
     height: auto;
 
     font-family: 'Montserrat', sans-serif;
-    background-color: $white;
+    background-color: $white; 
 }
 
 .contentsInfo {
-    @include funtionContentsInfo;
+    @include size(100%, 60px);
 
     background-color: $black-light;
     color: $white;
@@ -29,7 +29,7 @@ body {
 }
 
 #titleNameSite {
-    @include funtionContentsInfo;
+    @include size(100%, 60px);
 
     font-size: 1.5rem;
     font-weight: 600 ;
@@ -70,20 +70,53 @@ body {
     line-height: 35px;
 }
 
+#shoppingCartSpace {
+    background-color: $black-light;
+
+    @include alignItems (row, center, center);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    top: 78%;
+    left: 94%;
+    position: fixed;
+    cursor: pointer;
+    
+    transition: .4s;
+}
+
+#shoppingCartSpace:hover {
+    width: 65px;
+    height: 65px;
+} 
+
+#shoppingCartIcon {
+    width: 40px;
+    height: 40px;
+    color: $white-200;
+    transition: .3s;
+}
+
+#shoppingCartIcon:hover {
+    width: 37px;
+    height: 37px;
+}
+
 #textSpaceShoes {
     @include alignItems(column, center, center);
     margin-bottom: 59px;
 }
 
 #titleDestaques {
-    margin: 58px 0 10px 0;
+    @include margin(58px, 0, 10px, 0);
     font-size: 2rem;
     color: $black-light;
     font-weight: 600;
 }
 
 #descriptionSubtitle {
-    font-size: 1.12rem;
+    font-size: 1.12rem; 
     font-weight: 32px;
     color: $gray;
 }
