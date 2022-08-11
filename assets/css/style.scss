@@ -11,7 +11,9 @@ body {
     height: auto;
 
     font-family: 'Montserrat', sans-serif;
-    background-color: $white; 
+    background-color: $white;
+
+    overflow-x: hidden;
 }
 
 .contentsInfo {
@@ -70,63 +72,8 @@ body {
     line-height: 35px;
 }
 
-#shoppingCartSpace {
-    background-color: $black-light;
-
-    @include alignItems (row, center, center);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-
-    top: 78%;
-    left: 94%;
-    position: fixed;
-    cursor: pointer;
-    
-    transition: .4s;
-}
-
-#shoppingCartSpace:hover {
-    width: 65px;
-    height: 65px;
-} 
-
-#shoppingCartIcon {
-    width: 40px;
-    height: 40px;
-    color: $white-200;
-    transition: .3s;
-}
-
-#shoppingCartIcon:hover {
-    width: 37px;
-    height: 37px;
-}
-
-#textSpaceShoes {
-    @include alignItems(column, center, center);
-    margin-bottom: 59px;
-}
-
-#titleDestaques {
-    @include margin(58px, 0, 10px, 0);
-    font-size: 2rem;
-    color: $black-light;
-    font-weight: 600;
-}
-
-#descriptionSubtitle {
-    font-size: 1.12rem; 
-    font-weight: 32px;
-    color: $gray;
-}
-
-#contentesCards {
-    width: 90%;
-    margin: 0 auto 112px auto;
-    @include alignItems(row, center, center);
-    flex-wrap: wrap;
-    gap: 39px 13px;
+.models {
+    display: none;
 }
 
 .card {
@@ -168,6 +115,118 @@ body {
 .buttonBuy:hover {
     background-color: $gray;
     color: $white-200;
+}
+
+#shoppingCartSpace {
+    background-color: $black-light;
+
+    @include alignItems (row, center, center);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    top: 78%;
+    left: 94%;
+    position: fixed;
+    cursor: pointer;
+    
+    transition: .4s;
+}
+
+#shoppingCartSpace:hover {
+    width: 65px;
+    height: 65px;
+} 
+
+#shoppingCartIcon {
+    width: 40px;
+    height: 40px;
+    color: $white-200;
+    transition: .3s;
+}
+
+#shoppingCartIcon:hover {
+    width: 37px;
+    height: 37px;
+}
+
+// Carrinho de compras
+#salesCart {
+    display: none;
+
+    width: 450px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 71%;
+
+    background-color: $white-200;
+    z-index: 1000;
+
+}
+
+#closeBtn {
+    width: 20px;
+    height: 20px;
+
+    color: $black-light;
+    margin: 10px;
+    
+    cursor: pointer;
+}
+
+#contentsShopping {
+    @include margin(10px, auto, 0, auto);
+    // background-color: #3d3d3d;
+    width: 95%;
+    height: 85%;
+}
+
+#titleShoppingCart {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    // background-color: #9b9b9b2c;
+    text-align: center;
+
+    thead {
+        background-color: $white;
+    }
+
+    tbody {
+        td {
+            height: 30px;
+        }
+    }
+}
+
+#textSpaceShoes {
+    @include alignItems(column, center, center);
+    margin-bottom: 59px;
+}
+
+#titleDestaques {
+    @include margin(58px, 0, 10px, 0);
+    font-size: 2rem;
+    color: $black-light;
+    font-weight: 600;
+}
+
+#descriptionSubtitle {
+    font-size: 1.12rem; 
+    font-weight: 32px;
+    color: $gray;
+}
+
+#contentesCards {
+    width: 90%;
+    margin: 0 auto 112px auto;
+    @include alignItems(row, center, center);
+    flex-wrap: wrap;
+    gap: 39px 13px;
 }
 
 #textFooter {
