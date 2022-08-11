@@ -13,7 +13,7 @@ shoesJson.map((item, index) => {
     
     document.querySelector('#contentesCards').appendChild(shoesItem)
 
-    shoesItem.querySelector('.contentsImage img').scr = item.img
+    shoesItem.querySelector('.contentsImage').innerHTML = `<img src="${item.img}"/>`
     shoesItem.querySelector('.priceShoes').innerHTML = `R$ ${item.price.toFixed(2)}`
     shoesItem.querySelector('.nameProduct').innerHTML = item.produto
 
