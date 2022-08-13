@@ -15,6 +15,15 @@ shoesJson.map((item, index) => {
 
     shoesItem.querySelector('.contentsImage').innerHTML = `<img src="${item.img}"/>`
     shoesItem.querySelector('.priceShoes').innerHTML = `R$ ${item.price.toFixed(2)}`
-    shoesItem.querySelector('.nameProduct').innerHTML = item.produto
+
+    // console.log(shoesItem)
+    
+    shoesItem.querySelector('.card a').addEventListener('click', (e) => {
+        e.preventDefault()
+        
+        const preco = document.querySelector('.spaceValue .priceShoes').value
+        console.log(`Preço do tenis escolhido: ${preco}`)
+    })
 
 })
+
