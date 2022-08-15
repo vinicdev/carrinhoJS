@@ -1,4 +1,6 @@
 const modal = document.getElementById('salesCart')
+const result = document.querySelector(".listTeste")
+const cart = []
 
 function openModal() {
     modal.style.display = 'block'
@@ -14,16 +16,33 @@ shoesJson.map((item, index) => {
     document.querySelector('#contentesCards').appendChild(shoesItem)
 
     shoesItem.querySelector('.contentsImage').innerHTML = `<img src="${item.img}"/>`
+    shoesItem.querySelector('.nameProduct').innerHTML = item.produto
     shoesItem.querySelector('.priceShoes').innerHTML = `R$ ${item.price.toFixed(2)}`
 
-    // console.log(shoesItem)
     
     shoesItem.querySelector('.card a').addEventListener('click', (e) => {
         e.preventDefault()
-        
-        const preco = document.querySelector('.spaceValue .priceShoes').value
-        console.log(`Preço do tenis escolhido: ${preco}`)
+
+        const nameShoes = shoesItem.querySelector('.nameProduct').innerText
+        const priceShoes = shoesItem.querySelector('.priceShoes').innerHTML.replace('R$&nbsp;', '')
+
+        console.log(`Nome do produto: ${nameShoes}\nPreço do produto: ${priceShoes}`)  
+
+        guardaItens(nameShoes)
     })
 
 })
 
+
+const guardaItens = (nameShoes) => {
+    const listResult = nameShoes.map((nameShoes) => {
+            return `
+                <li>
+                    <h2>Produto: ${nameShoes}</h2>
+                </li>
+            `;
+        }).join('');
+
+    result.innerHTML = listResult
+}
+ 
