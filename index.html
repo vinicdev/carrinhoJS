@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Carrinho de Compras JS</title>
 </head>
@@ -49,24 +49,17 @@
         <span class="iconify" id="closeBtn" data-icon="fa:close" onclick="closeModal()"></span>
         <div id="contentsShopping">
             <h1 id="titleShoppingCart">Seus Pedidos</h1>
-            <table id="listTable" class="table">
-                <thead>
-                    <th>Produto</th>
-                    <th>QTD</th>
-                    <th>Valor UND</th>
-                </thead>
-                <tbody>
-                    <td>Tenis</td>
-                    <td>1</td>
-                    <td>1.000</td>
-                </tbody>
+            <div id="infomationShop">
+                <h3>Produto</h3>
+                <h3>Preço</h3>
+            </div>
+            <div id="products">
+                <ul id="listTable"></ul>
+            </div>
 
-                <tbody>
-                    <td>Chinelo</td>
-                    <td>4</td>
-                    <td>5.500</td>
-                </tbody>
-            </table>
+            <div id="price">
+                <p>Valor Total: <small id="value"></small></p>
+            </div>
         </div>
     </div>
 
@@ -82,10 +75,6 @@
         </div>
 
         <div id="contentesCards"></div>
-
-        <div class="teste" style="background-color:blue; color:white;height: 50px; display: flex; justify-content: center; align-items: center;">
-            <ul class="listTeste"></ul>
-        </div>
     </main>
 
     <div class="contentsInfo">
