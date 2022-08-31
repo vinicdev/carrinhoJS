@@ -24,8 +24,6 @@ shoesJson.map((item, index) => {
 
         const nameShoes = shoesItem.querySelector('.nameProduct').innerText;
         const priceShoes = shoesItem.querySelector('.priceShoes').innerHTML.replace('R$&nbsp;', '');
-        const priceShoes2 = item.price;
-
 
         console.log(`Nome do produto: ${nameShoes}\nPreço do produto: ${priceShoes}`);
 
@@ -37,9 +35,7 @@ shoesJson.map((item, index) => {
         node2.appendChild(price);
         result.appendChild(node);
         result.appendChild(node2);
-
     })
-
 })
 
 
